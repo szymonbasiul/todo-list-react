@@ -1,0 +1,25 @@
+.section {
+    margin: 10px 0;
+    background-color: white;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+@media (max-width: 768px) {
+    .section__header {
+        flex-direction: column;
+    }
+
+    .section__buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,43 @@
+.buttons {
+    display: flex;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+}
+
+.button__itemRow {
+    display: flex;
+}
+
+.buttons__button {
+    color: rgb(12, 117, 117);
+    border: none;
+    background: none;
+}
+
+.buttons__button:hover {
+    cursor: pointer;
+    color: rgb(16, 153, 153);
+}
+
+.buttons__button:disabled {
+    color: #666666;
+}
+
+@media (max-width: 768px) {
+    .section__buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .button__itemRow {
+        margin-top: 20px;
+    }
+
+    .buttons__button {
+        align-self: center;
+        flex-basis: 100%;
+    }
+}

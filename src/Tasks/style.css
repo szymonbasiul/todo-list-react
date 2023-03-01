@@ -1,0 +1,94 @@
+.list__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.list__itemRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.list__itemRow--hidden {
+    display: none;
+}
+
+.list__itemContent {
+    width: 100%;
+    margin: 10px;
+}
+
+.list__itemContent--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+.list__button:hover {
+    background-color: rgba(11, 138, 11, 0.8);
+}
+
+.list__button:active {
+    background-color: rgba(11, 138, 11, 0.8);
+    transform: translateY(2px);
+}
+
+.list__button--remove {
+    background-color: red;
+    transition: 0.5s;
+}
+
+.list__button--remove:hover {
+    background-color: rgba(211, 12, 12, 0.752);
+}
+
+.list__button--remove:active {
+    background-color: rgba(211, 12, 12, 0.752);
+    transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+    .list__button {
+        border: none;
+        background-color: green;
+        color: white;
+    }
+
+    .list__button:hover {
+        background-color: rgba(11, 138, 11, 0.8);
+    }
+
+    .list__button:active {
+        background-color: rgba(11, 138, 11, 0.8);
+        transform: translateY(2px);
+    }
+
+    .list__button--remove {
+        background-color: red;
+        transition: 0.5s;
+    }
+
+    .list__button--remove:hover {
+        background-color: rgba(211, 12, 12, 0.752);
+    }
+
+    .list__button--remove:active {
+        background-color: rgba(211, 12, 12, 0.752);
+        transform: translateY(2px);
+    }
+}
