@@ -3,8 +3,8 @@ import "./style.css";
 
 const Form = () => (
   <form className="form__input">
-    <input className="newTask" placeholder="Co jest do zrobienia?" />
-    <button className="newTaskButton">Dodaj zadanie</button>
+    <input className="input__task" placeholder="Co jest do zrobienia?" />
+    <button className="input__taskButton">Dodaj zadanie</button>
   </form>
 );
 
