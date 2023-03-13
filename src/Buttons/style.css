@@ -23,7 +23,8 @@
 }
 
 .buttons__button:disabled {
-    color: #666666;
+    color: #6666668f;
+    transition: 0.4s;
 }
 
 @media (max-width: 768px) {
