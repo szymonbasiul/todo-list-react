@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
@@ -7,7 +7,7 @@ const Form = ({ addNewTask }) => {
   const onFormSubmit = (event) => {
     event.preventDefault();
     const trimmedNewTaskContent = newTaskContent.trim();
-    if(!trimmedNewTaskContent) {
+    if (!trimmedNewTaskContent) {
       return;
     }
     addNewTask(trimmedNewTaskContent);
