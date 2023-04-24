@@ -14,13 +14,13 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         >
           {task.done ? "✔" : ""}
         </button>
-        <li
+        <ul
           className={`list__itemContent ${
             task.done ? "list__itemContent--done" : ""
           }`}
         >
           {task.content}
-        </li>
+        </ul>
         <button
           onClick={() => removeTask(task.id)}
           className="list__button list__button--remove"
