@@ -11,8 +11,7 @@ https://szymonbasiul.github.io/todo-list-react/
 HTML
 JS
 React
-CSS
-BEM
+Styled Components
 
 ## Description
 
