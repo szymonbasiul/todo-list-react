@@ -21,7 +21,7 @@ const Form = ({ addNewTask }) => {
   };
 
   return (
-    <InputForm onSubmit={onFormSubmit}>
+    <StyledForm onSubmit={onFormSubmit}>
       <Input
         value={newTaskContent}
         ref={inputRef}
@@ -29,7 +29,7 @@ const Form = ({ addNewTask }) => {
         placeholder="Co jest do zrobienia?"
       />
       <Button onClick={focusInput}>Dodaj zadanie</Button>
-    </InputForm>
+    </StyledForm>
   );
 };
 

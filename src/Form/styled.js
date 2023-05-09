@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputForm = styled.form`
+export const StyledForm = styled.form`
   display: flex;
   justify-content: space-between;
   flex-basis: 100%;
