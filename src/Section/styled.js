@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainSection = styled.section`
   margin: 10px 0;
-  background-color: white;
+  background-color: ${({ theme }) => theme.color.white};
 `;
 
 export const SectionHeader = styled.h2`
@@ -12,9 +12,9 @@ export const SectionHeader = styled.h2`
   font-size: 22px;
   font-weight: bolder;
   margin: 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  border-bottom: 1px solid ${({ theme }) => theme.color.border};
 
-  @media (max-width: 768px) {
-      flex-direction: column;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    flex-direction: column;
   }
 `;

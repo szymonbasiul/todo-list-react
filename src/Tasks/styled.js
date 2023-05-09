@@ -16,7 +16,7 @@ export const Item = styled.li`
   align-items: center;
   width: 100%;
   padding: 10px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  border-bottom: 1px solid ${({ theme }) => theme.color.border};
 
   ${({ hidden }) =>
     hidden &&
@@ -41,31 +41,31 @@ export const Button = styled.button`
   border: none;
   width: 30px;
   height: 30px;
-  background-color: green;
-  color: white;
+  background-color: ${({ theme }) => theme.color.green};
+  color: ${({ theme }) => theme.color.white};
   transition: 0.5s;
 
   &:hover {
-    background-color: rgba(11, 138, 11, 0.8);
+    background-color: ${({ theme }) => theme.color.activeGreen};
   }
 
   &:active {
-    background-color: rgba(11, 138, 11, 0.8);
+    background-color: ${({ theme }) => theme.color.activeGreen};
     transform: translateY(2px);
   }
 
   ${({ remove }) =>
     remove &&
     css`
-      background-color: red;
+      background-color: ${({ theme }) => theme.color.red};
       transition: 0.5s;
 
       &:hover {
-        background-color: rgba(211, 12, 12, 0.752);
+        background-color: ${({ theme }) => theme.color.activeRed};
       }
 
       &:active {
-        background-color: rgba(211, 12, 12, 0.752);
+        background-color: ${({ theme }) => theme.color.activeRed};
         transform: translateY(2px);
       }
     `}

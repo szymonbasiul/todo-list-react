@@ -8,28 +8,28 @@ export const ButtonsContainer = styled.div`
   flex-direction: row;
   margin: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     justify-content: center;
     flex-direction: column;
   }
 `;
 
 export const Button = styled.button`
-  color: rgb(12, 117, 117);
+  color: ${({ theme }) => theme.color.button};
   border: none;
   background: none;
 
   &:hover {
     cursor: pointer;
-    color: rgb(16, 153, 153);
+    color: ${({ theme }) => theme.color.activeToggleButton};
   }
 
   &:disabled {
-    color: #6666668f;
+    color: ${({ theme }) => theme.color.disabledToggleButton};
     transition: 0.4s;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     align-self: center;
     flex-basis: 100%;
   }
