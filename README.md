@@ -13,6 +13,7 @@ JS
 React
 CSS
 Styled Components
+Custom Hooks
 
 ## Description
 
