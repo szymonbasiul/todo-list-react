@@ -11,9 +11,11 @@ https://szymonbasiul.github.io/todo-list-react/
 HTML
 JS
 React
+Redux
 CSS
 Styled Components
 Custom Hooks
+
 
 ## Description
 
