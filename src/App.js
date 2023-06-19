@@ -1,19 +1,24 @@
 import React from "react";
-import { Link, Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author/Author";
+import {
+  NavbarContainer,
+  NavbarLink,
+  StyledLink,
+} from "./common/Navbar/styled";
 
 export default () => (
   <BrowserRouter>
     <nav>
-      <ul>
-        <li>
-          <Link to="/zadania">Zadania</Link>
-        </li>
-        <li>
-          <Link to="/autor">O autorze</Link>
-        </li>
-      </ul>
+      <NavbarContainer>
+        <NavbarLink>
+          <StyledLink to="/zadania">Zadania</StyledLink>
+        </NavbarLink>
+        <NavbarLink>
+          <StyledLink to="/autor">O autorze</StyledLink>
+        </NavbarLink>
+      </NavbarContainer>
       <Switch>
         <Route path="/zadania">
           <Tasks />

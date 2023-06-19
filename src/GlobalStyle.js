@@ -10,7 +10,6 @@ html {
   }
   
   #root {
-    padding-top: 10%;
     min-height: 100vh;
     line-height: 1.15;
     word-break: break-word;
