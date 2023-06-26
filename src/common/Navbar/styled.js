@@ -9,10 +9,13 @@ export const NavbarContainer = styled.ul`
   width: 100%;
   background-color: ${({ theme }) => theme.color.button};
   text-decoration: none;
+  
+  
 `;
 
 export const NavbarLink = styled.li`
   margin: 20px 40px;
+ 
 `;
 
 export const StyledLink = styled(Link)`
@@ -21,7 +24,4 @@ export const StyledLink = styled(Link)`
   font-weight: 300;
   text-decoration: none;
 
-  &:focus {
-    font-weight: 900;
-  }
 `;
