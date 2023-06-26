@@ -5,7 +5,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "../../common/Container/styled";
 
-function App() {
+function Tasks() {
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Tasks;
