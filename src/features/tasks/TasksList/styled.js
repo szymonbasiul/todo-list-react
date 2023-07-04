@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   display: flex;
@@ -35,6 +36,28 @@ export const Content = styled.ul`
     css`
       text-decoration: line-through;
     `}
+`;
+
+export const TaskLink = styled(Link)`
+  color: ${({ theme }) => theme.color.button};
+  border: none;
+  text-decoration: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.activeToggleButton};
+  }
+
+  &:disabled {
+    color: ${({ theme }) => theme.color.disabledToggleButton};
+    transition: 0.4s;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    align-self: center;
+    flex-basis: 100%;
+  }
 `;
 
 export const Button = styled.button`
