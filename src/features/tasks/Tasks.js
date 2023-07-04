@@ -5,6 +5,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "../../common/Container/styled";
 import FetchButton from "./FetchButton";
+import SearchEngine from "./SearchEngine";
 
 function Tasks() {
   return (
@@ -14,6 +15,10 @@ function Tasks() {
         title="Dodaj nowe zadanie"
         body={<Form />}
         extraHeaderContent={<FetchButton />}
+      />
+      <Section
+        title="Wyszukiwarka"
+        body={<SearchEngine />}
       />
       <Section
         title="Lista zadań"
