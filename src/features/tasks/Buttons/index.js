@@ -1,7 +1,6 @@
 import {
   toggleHideDone,
   setAllDone,
-  fetchExampleTasks,
   selectAreTasksEmpty,
   selectHideDone,
   selectIsEveryTaskDone,
@@ -17,9 +16,6 @@ const Buttons = () => {
   const dispatch = useDispatch();
   return (
     <ButtonsContainer>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Pobierz przykładowe zadania
-      </Button>
       {!areTasksEmpty && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>
