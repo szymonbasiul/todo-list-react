@@ -6,10 +6,14 @@ export const Navbar = () => {
     <>
       <NavbarContainer>
         <NavbarLink>
-          <StyledLink to="/zadania">Zadania</StyledLink>
+          <StyledLink activeClassName="active" to="/zadania">
+            Zadania
+          </StyledLink>
         </NavbarLink>
         <NavbarLink>
-          <StyledLink to="/autor">O autorze</StyledLink>
+          <StyledLink activeClassName="active" to="/autor">
+            O autorze
+          </StyledLink>
         </NavbarLink>
       </NavbarContainer>
     </>
