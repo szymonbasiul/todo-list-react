@@ -1,19 +1,19 @@
 import React from "react";
-import { NavbarContainer, NavbarLink, StyledLink } from "./styled";
+import { NavbarContainer, NavbarLink, StyledNavLink } from "./styled";
 
 export const Navbar = () => {
   return (
     <>
       <NavbarContainer>
         <NavbarLink>
-          <StyledLink activeClassName="active" to="/zadania">
+          <StyledNavLink to="/zadania">
             Zadania
-          </StyledLink>
+          </StyledNavLink>
         </NavbarLink>
         <NavbarLink>
-          <StyledLink activeClassName="active" to="/autor">
+          <StyledNavLink to="/autor">
             O autorze
-          </StyledLink>
+          </StyledNavLink>
         </NavbarLink>
       </NavbarContainer>
     </>
