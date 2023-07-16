@@ -3,7 +3,7 @@ import { NavbarContainer, NavbarLink, StyledNavLink } from "./styled";
 
 export const Navbar = () => {
   return (
-    <>
+    <nav>
       <NavbarContainer>
         <NavbarLink>
           <StyledNavLink to="/zadania">
@@ -16,6 +16,6 @@ export const Navbar = () => {
           </StyledNavLink>
         </NavbarLink>
       </NavbarContainer>
-    </>
+    </nav>
   );
 };

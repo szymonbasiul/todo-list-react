@@ -5,8 +5,9 @@ const activeClassName = "active";
 export const NavbarContainer = styled.ul`
   display: flex;
   justify-content: center;
-  list-style-type: none;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
   width: 100%;
   background-color: ${({ theme }) => theme.color.button};
   text-decoration: none;
