@@ -6,14 +6,10 @@ export const Navbar = () => {
     <nav>
       <NavbarContainer>
         <NavbarLink>
-          <StyledNavLink to="/zadania">
-            Zadania
-          </StyledNavLink>
+          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
         </NavbarLink>
         <NavbarLink>
-          <StyledNavLink to="/autor">
-            O autorze
-          </StyledNavLink>
+          <StyledNavLink to="/autor">O autorze</StyledNavLink>
         </NavbarLink>
       </NavbarContainer>
     </nav>
