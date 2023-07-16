@@ -11,7 +11,9 @@ function TaskDetails() {
   return (
     <Container>
       <Header title="Szczegóły zadania" />
-      <Section title={task.content} body={"Elo"} />
+      <Section title={task ? task.content : "Nie znaleziono zadania ;("} body={
+        <><strong>Ukończono: </strong>{task.done ? "Tak" : "Nie"}</>
+      } />
     </Container>
   );
 }
