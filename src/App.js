@@ -1,12 +1,12 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
+import { Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import { Navbar } from "./common/Navbar";
 import TasksPage from "./features/tasks/TasksPage";
 import Author from "./features/author/Author";
-import TaskDetails from "./features/tasks/TasksPage/TaskDetails";
+import TaskDetails from "./features/tasks/TaskDetails";
 
 export default () => (
-  <BrowserRouter basename="/todo-list-react">
+  <HashRouter>
     <nav>
       <Navbar />
       <Switch>
@@ -27,5 +27,5 @@ export default () => (
         </Route>
       </Switch>
     </nav>
-  </BrowserRouter>
+  </HashRouter>
 );

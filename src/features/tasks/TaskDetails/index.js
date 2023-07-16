@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { Container } from "../../../../common/Container/styled";
-import Header from "../../../../common/Header";
-import Section from "../../../../common/Section";
+import { Container } from "../../../common/Container/styled";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
 import { useSelector } from "react-redux";
-import { getTaskById } from "../../tasksSlice";
+import { getTaskById } from "../tasksSlice";
 
 function TaskDetails() {
   const { id } = useParams();
@@ -11,10 +11,7 @@ function TaskDetails() {
   return (
     <Container>
       <Header title="Szczegóły zadania" />
-      <Section
-        title={task}
-        body={"Elo"}
-      />
+      <Section title={task.content} body={"Elo"} />
     </Container>
   );
 }
